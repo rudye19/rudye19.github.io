@@ -1,132 +1,183 @@
-<section class="compatibility inherited-styles-for-exported-element">
-  <h3>Rudy</h3>
-  <p class="subtitle">
-    Wordpress, Wix, Squarespace, Shopify, React, etc. CSS Scan runs on the browser as an extension so it works on any website, any theme and even works offline!<br>
-    Choose your favorite: Chrome, Firefox, Safari, and Edge. Internet Explorer maybe never.
-  </p>
-  <ul>
-    <li><img src="https://icons8.com/icon/119026/instagram" alt="instagram"></li>
-    <li><img src="http://www.w3.org/2000/svg" alt="Twitter"></li>
-   
-<!--     <li><img src="https://getcssscan.com/img/logos/safari.png" alt="Safari logo" class=""></li>
-    <li><img src="https://getcssscan.com/img/logos/edge.png" alt="Edge logo" class=""></li> -->
-  </ul>
-  <a class="chip" href="#="_blank">
-    🎉&nbsp; terimakasih sudah bersedia mengunjungi github saya
-  </a>
-</section>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Animasi</title>
+ 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Website Kami</h1>
+            <p>Temukan produk dan layanan terbaik kami.</p>
+            <a href="#cta" class="cta-button">Mulai Sekarang</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami menawarkan berbagai layanan berkualitas tinggi dengan dukungan penuh untuk membantu Anda mencapai tujuan Anda.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-card">
+                <h3>Web Design</h3>
+                <p>Membuat desain website yang responsif dan menarik.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO</h3>
+                <p>Optimasi mesin pencari untuk meningkatkan visibilitas online Anda.</p>
+            </div>
+            <div class="service-card">
+                <h3>Marketing</h3>
+                <p>Strategi pemasaran digital untuk memperluas jangkauan bisnis Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <h2>Siap Bergabung?</h2>
+            <a href="#" class="cta-button">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Website Kami. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
+
 
 <style>
-</style>
-
-<style>
-  .inherited-styles-for-exported-element {
-    color: #333;
-    font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-    font-size: 100%;
-  }
-
-  h3 {
-    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-    font-weight: 400;
-  }
-
-  .subtitle {
-    color: #666;
-    margin: 1.5em auto 2.2em;
-    max-width: 600px;
-  }
-
-  .compatibility, .subtitle {
-    text-align: center;
-  }
-
-  .compatibility h3 {
-    font-size: 1.9em;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  .compatibility ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin-top: 2em;
+  /* Reset basic styles */
+* {
+    margin: 0;
     padding: 0;
-    text-align: center;
-  }
-
-  .compatibility img {
-    height: auto;
-    max-width: 55px;
-    width: 100%;
-  }
-
-  .compatibility li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  @media screen and (min-width: 768px) {
-    .compatibility li {
-      margin-right: 2em;
-    }
-
-    .compatibility img {
-      max-width: 65px;
-    }
-  }
-
-  @media screen and (min-width: 1024px) {
-    .compatibility h3 {
-      font-size: 2.5em;
-    }
-  }
-
-  body>section:not(.buy-cta) {
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10%;
-    width: 100%;
-  }
+}
 
-  @media screen and (min-width: 768px) {
-    body>section:not(.buy-cta) {
-      max-width: 1050px;
-    }
-  }
+/* General settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
 
-  @media screen and (min-width: 1024px) {
-    body>section:not(.buy-cta) {
-      box-sizing: initial;
-      width: auto;
-    }
-  }
-
-  .compatibility .chip {
-    background-color: #c2fbd7;
-    border-radius: 100px;
-    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-    color: green;
-    display: inline-block;
-    margin: 2em auto 0;
-    padding: 5px 20px;
+/* Header */
+header {
+    background: linear-gradient(45deg, #4c6ef5, #2a7fff);
+    color: white;
     text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
     text-decoration: none;
-    transition: all 250ms;
-    transition-behavior: normal;
-  }
+    transition: background-color 0.3s;
+}
 
-  .compatibility li:last-child {
-    margin-right: 0;
-  }
+.cta-button:hover {
+    background-color: #2a7fff;
+    color: white;
+}
 
-  @media screen and (min-width: 1024px) {
-    .compatibility .chip:hover {
-      box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-      transform: scale(1.05) rotate(-1deg);
-    }
-  }
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+#services {
+    background: #f8f8f8;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* CTA Section */
+#cta {
+    background: #2a7fff;
+    color: white;
+    padding: 80px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
 </style>
